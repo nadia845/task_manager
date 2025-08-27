@@ -83,16 +83,36 @@ print(update_task_response)
 delete_task_response = delete.delete_task("wake up")
 print(delete_task_response)"""
 
-from oop import chat
+# from oop import chat
 
-chat_with_abena = chat()
-"""chat_with_micheal = chat("Micheal Hammond", "Extend the portfolio deadline", "5:56 AM")
-chat_with_0248470214 = chat("The closer", "when are we ending the class?", "3:59 PM")
+# chat_with_abena = chat()
+# """chat_with_micheal = chat("Micheal Hammond", "Extend the portfolio deadline", "5:56 AM")
+# chat_with_0248470214 = chat("The closer", "when are we ending the class?", "3:59 PM")
 
-print(chat_with_0248470214.open())"""
-print(chat_with_abena)
+# print(chat_with_0248470214.open())"""
+# print(chat_with_abena)
+
+#### TKINTER ###
+# from commands import save_task
+# from commands import get_tasks
+# task_title = input("What task are you going to do?: ")
+# save_task({"title": task_title})
+
+# for task in get_tasks():
+#     print(task)
 
 
+import tkinter as tk
+import ui
+
+
+app = tk.Tk()
+app.title("Task Manager")
+app.geometry("720x480")
+
+ui.show_all_tasks_frame(app)
+
+app.mainloop()
 
 
 
